@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+spring:
+  datasource: # 数据源配置
+    name: test
+    url: jdbc:mysql://47.101.213.172:3306/mychat?serverTimezone=GMT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true  #jdbc:mysql://14.66.87.165:3307/soa_kss
+    username: root
+    password: 123456 #dddd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    static-path-pattern: /static/** #配置静态资源访问地址
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.example.onenight.entity  # 注意：对应实体类的路径
