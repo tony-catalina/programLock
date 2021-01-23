@@ -99,6 +99,13 @@
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 
+        <!--引入百度人脸识别sdk-->
+        <!--<dependency>
+            <groupId>com.baidu.aip</groupId>
+            <artifactId>java-sdk</artifactId>
+            <version>${version}</version>
+        </dependency>-->
+
 
 
 
